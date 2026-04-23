@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>slash site</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+	<main class="site">
+		<section class="left-pane" aria-label="Profile">
+			<img
+				class="avatar"
+				src="https://millx-raped-me.tixte.co/r/yqeoSfvG_400x400.jpg"
+				alt="Profile portrait"
+			>
+
+			<h1 class="name">Slash</h1>
+			<p class="name-quote" id="name-quote" aria-live="polite">
+				<i class="bi bi-quote quote-icon" aria-hidden="true"></i>
+				<span class="quote-text">missingno</span>
+			</p>
+
+			<nav class="socials" aria-label="Social links">
+				<!-- EDIT: Update social links and labels -->
+				<a class="social-link" href="https://twitter.com/originalslash" target="_blank" rel="noreferrer">Twitter</a>
+				<a class="social-link" href="https://github.com/backslashg" target="_blank" rel="noreferrer">GitHub</a>
+				<a class="social-link" href="https://anilist.co/user/backslashg/" target="_blank" rel="noreferrer">AniList</a>
+			</nav>
+
+			<div class="embed-stack">
+				<iframe
+					class="discord-embed"
+					title="Discord user embed"
+					width="336"
+					height="128"
+					frameborder="0"
+					scrolling="no"
+					sandbox="allow-scripts"
+					src="https://widgets.vendicated.dev/user?id=1470267547789033523&theme=dark&banner=true&full-banner=false&rounded-corners=true&discord-icon=false&badges=true&guess-nitro=true&background-color=%231d1a17&foreground-color=%23ede8de"
+				></iframe>
+
+				<iframe
+					class="lastfm-embed"
+					title="Last.fm currently playing"
+					frameborder="0"
+					scrolling="no"
+					src="https://lastfm-embed.vercel.app/api/currently-playing?user=backslashg&lang=en&theme=gruvboxDark&borderSize=0&borderRadius=16&showTitle=false"
+				></iframe>
+			</div>
+		</section>
+
+		<section class="right-pane" aria-label="Content panels">
+			<div class="tabs" role="tablist" aria-label="Site sections">
+				<button class="tab" id="tab-home" role="tab" aria-controls="panel-home" aria-selected="true">Overview</button>
+				<button class="tab" id="tab-projects" role="tab" aria-controls="panel-projects" aria-selected="false">Projects</button>
+				<button class="tab" id="tab-about" role="tab" aria-controls="panel-about" aria-selected="false">About</button>
+			</div>
+
+			<div class="panels">
+				<article class="panel active" id="panel-home" role="tabpanel" aria-labelledby="tab-home">
+					<h2 class="section-title">hey, i'm slash</h2>
+					<p class="lead">
+						I am a professional jackass who likes to make random shit that I call a "project". I am also a member of <a class="boxed-external-link" href="https://ftg.gay" target="_blank" rel="noreferrer">FTG2085<i class="bi bi-box-arrow-up-right external-icon" aria-hidden="true"></i></a> which are people who do similar shit I do.
+					</p>
+					<p class="about-copy">
+						Some of my favorite games are Hollow Knight, Undertale, Deltarune, and OneShot.
+					</p>
+
+					<div class="testimonials-list" aria-label="Testimonials list">
+						<!-- Duplicate .testimonial-card to add more testimonials -->
+						<section class="testimonial-card">
+							<div class="testimonial-stars" aria-label="5 out of 5 stars">
+								<i class="bi bi-star-fill" aria-hidden="true"></i>
+								<i class="bi bi-star-fill" aria-hidden="true"></i>
+								<i class="bi bi-star-fill" aria-hidden="true"></i>
+								<i class="bi bi-star-fill" aria-hidden="true"></i>
+								<i class="bi bi-star-fill" aria-hidden="true"></i>
+							</div>
+							<p class="testimonial-text">BackslashG (also known as Backslash The Gamer) is an interesting fellow. He's got quite the big online presence, and loves OneShot. BackslashG's friends often describe him as 'violent', as he tends to beat his dog any time he's angry. BackslashG commonly joins voice calls in FTG2085, turns on his camera, and starts rage rapping. It ends with him beating his dog, and penetrating the anus of his dog.</p>
+							<p class="testimonial-author">- Millx</p>
+						</section>
+					</div>
+				</article>
+
+				<article class="panel" id="panel-projects" role="tabpanel" aria-labelledby="tab-projects">
+					<h2 class="section-title">Selected Projects</h2>
+
+					<!-- EDIT: Replace titles, descriptions, links, and types below -->
+					<div class="projects-grid">
+						<section class="project project-a">
+							<div class="project-meta">
+								<h3 class="project-title">SEIZURE</h3>
+								<span class="project-type">Discord Tool</span>
+							</div>
+							<p>
+								A Discord utility that rapidly switches themes. Mainly for use on hacked accounts.
+							</p>
+							<a class="project-link" href="https://github.com/BackslashG/seizure" target="_blank" rel="noreferrer">View on GitHub</a>
+						</section>
+
+						<section class="project project-b">
+							<div class="project-meta">
+								<h3 class="project-title">Cheque</h3>
+								<span class="project-type">JavaScript</span>
+							</div>
+							<p>
+								Simple Discord token checker built in JavaScript.
+							</p>
+							<a class="project-link" href="https://github.com/BackslashG/cheque" target="_blank" rel="noreferrer">View on GitHub</a>
+						</section>
+
+						<section class="project project-c">
+							<div class="project-meta">
+								<h3 class="project-title">slashvertisement</h3>
+								<span class="project-type">Web Project</span>
+							</div>
+							<p>
+								The best advertisement service EVER!? (currently inactive since cloudflare charged me $0.86 for it #broke)
+							</p>
+							<a class="project-link" href="https://sl4sh.site/slashvertisement" target="_blank" rel="noreferrer">Open project</a>
+						</section>
+					</div>
+				</article>
+
+				<article class="panel" id="panel-about" role="tabpanel" aria-labelledby="tab-about">
+					<h2 class="section-title">About</h2>
+				
+					<p class="about-copy">
+						I don't know what else to put here. Please use my <a class="boxed-external-link" href="https://torbox.app/subscription?referral=5aa1d4ff-3c47-4983-91fa-a9908dc65124" target="_blank" rel="noreferrer">TorBox referral<i class="bi bi-box-arrow-up-right external-icon" aria-hidden="true"></i></a> 
+					</p>
+					<p class="note">
+						67
+					</p>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
