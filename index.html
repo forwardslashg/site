@@ -3,9 +3,44 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>slash site</title>
+	<title>Slash's Site</title>
+	<meta name="description" content="Personal site of Slash featuring projects, social links, profile details, along with other information">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<meta name="author" content="Slash">
+	<meta name="theme-color" content="#1d1a17">
+	<link rel="canonical" href="https://sl4sh.site/">
+
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Slash">
+	<meta property="og:title" content="Slash's Site">
+	<meta property="og:description" content="Personal site of Slash featuring projects, social links, profile details, along with other information">
+	<meta property="og:url" content="https://sl4sh.site/">
+	<meta property="og:locale" content="en_US">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Slash's Site">
+	<meta name="twitter:description" content="Personal site of Slash featuring projects, social links, profile details, along with other information">
+
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			"name": "Slash",
+			"url": "https://sl4sh.site/",
+			"description": "Personal site of Slash featuring projects, social links, profile details, along with other information",
+			"author": {
+				"@type": "Person",
+				"name": "Slash",
+				"sameAs": [
+					"https://twitter.com/originalslash",
+					"https://github.com/backslashg",
+					"https://anilist.co/user/backslashg/"
+				]
+			}
+		}
+	</script>
 </head>
 <body>
 	<main class="site">
@@ -14,6 +49,9 @@
 				class="avatar"
 				src="https://millx-raped-me.tixte.co/r/yqeoSfvG_400x400.jpg"
 				alt="Profile portrait"
+				loading="eager"
+				decoding="async"
+				fetchpriority="high"
 			>
 
 			<h1 class="name">Slash</h1>
@@ -23,9 +61,8 @@
 			</p>
 
 			<nav class="socials" aria-label="Social links">
-				<!-- EDIT: Update social links and labels -->
 				<a class="social-link" href="https://twitter.com/originalslash" target="_blank" rel="noreferrer">Twitter</a>
-				<a class="social-link" href="https://github.com/backslashg" target="_blank" rel="noreferrer">GitHub</a>
+				<a class="social-link" href="https://github.com/forwardslashg" target="_blank" rel="noreferrer">GitHub</a>
 				<a class="social-link" href="https://anilist.co/user/backslashg/" target="_blank" rel="noreferrer">AniList</a>
 			</nav>
 
@@ -87,7 +124,6 @@
 				<article class="panel" id="panel-projects" role="tabpanel" aria-labelledby="tab-projects">
 					<h2 class="section-title">Selected Projects</h2>
 
-					<!-- EDIT: Replace titles, descriptions, links, and types below -->
 					<div class="projects-grid">
 						<section class="project project-a">
 							<div class="project-meta">
