@@ -59,10 +59,6 @@ body::before {
 	display: grid;
 	grid-template-columns: 1fr 1.35fr;
 	position: relative;
-	transform: rotate(-0.22deg) translateZ(0);
-	transform-style: preserve-3d;
-	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
 	overflow: hidden;
 }
 
@@ -357,33 +353,18 @@ body::before {
 }
 
 .project-a {
-	width: 91%;
-	justify-self: start;
+	width: 100%;
 	border-left: 4px solid #9d8261;
-	transform: rotate(-0.25deg) translateZ(0);
-	transform-style: preserve-3d;
-	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
 }
 
 .project-b {
-	width: 84%;
-	justify-self: end;
+	width: 100%;
 	border-top: 3px double #7b6956;
-	transform: rotate(0.18deg) translateZ(0);
-	transform-style: preserve-3d;
-	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
 }
 
 .project-c {
-	width: 95%;
-	justify-self: start;
+	width: 100%;
 	border-right: 4px solid #867159;
-	transform: rotate(-0.14deg) translateZ(0);
-	transform-style: preserve-3d;
-	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
 }
 
 .project-meta {
@@ -447,10 +428,6 @@ body::before {
 	background: rgba(255, 255, 255, 0.35);
 	border-left: 4px solid #9d8261;
 	max-width: 58ch;
-	transform: rotate(-0.15deg) translateZ(0);
-	transform-style: preserve-3d;
-	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
 }
 
 .testimonial-stars {
@@ -492,10 +469,6 @@ body::before {
 	background: var(--paper);
 	border-top: 1px solid var(--line);
 	z-index: 10;
-	transform: rotate(0.22deg) translateZ(0);
-	transform-style: preserve-3d;
-	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
 }
 
 .about-copy {
@@ -548,6 +521,8 @@ body::before {
 		border-right: none;
 		border-bottom: 1px solid var(--line);
 		padding: 2rem 1.35rem 1.25rem;
+		align-items: center;
+		text-align: center;
 	}
 
 	.left-pane::before {
@@ -558,12 +533,45 @@ body::before {
 		max-width: none;
 	}
 
+	.name-quote {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	.socials {
 		margin-top: 0.2rem;
+		justify-content: center;
+	}
+
+	.embed-stack {
+		align-items: center;
 	}
 
 	.discord-embed {
 		width: min(100%, 420px);
+	}
+
+	.panels {
+		position: relative;
+		height: auto;
+	}
+
+	.panel {
+		position: relative;
+		inset: auto;
+		height: auto;
+		opacity: 0;
+		display: none;
+		pointer-events: none;
+		padding: 1.55rem 1.45rem 1.75rem 1.45rem;
+		transform: none;
+		transition: opacity 210ms ease;
+	}
+
+	.panel.active {
+		opacity: 1;
+		display: block;
+		pointer-events: auto;
 	}
 }
 
