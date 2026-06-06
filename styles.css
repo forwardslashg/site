@@ -58,6 +58,8 @@ body::before {
 	grid-template-columns: 1fr 1.35fr;
 	position: relative;
 	transform: rotate(-0.22deg);
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 	overflow: hidden;
 }
 
@@ -356,6 +358,8 @@ body::before {
 	justify-self: start;
 	border-left: 4px solid #9d8261;
 	transform: rotate(-0.25deg);
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 }
 
 .project-b {
@@ -363,6 +367,8 @@ body::before {
 	justify-self: end;
 	border-top: 3px double #7b6956;
 	transform: rotate(0.18deg);
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 }
 
 .project-c {
@@ -370,6 +376,8 @@ body::before {
 	justify-self: start;
 	border-right: 4px solid #867159;
 	transform: rotate(-0.14deg);
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 }
 
 .project-meta {
@@ -434,6 +442,8 @@ body::before {
 	border-left: 4px solid #9d8261;
 	max-width: 58ch;
 	transform: rotate(-0.15deg);
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 }
 
 .testimonial-stars {
