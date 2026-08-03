@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sl4sh.site/sitemap.xml
+Sitemap: https://slash.gay/sitemap.xml
